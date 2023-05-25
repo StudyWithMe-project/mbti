@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
@@ -14,8 +11,6 @@ interface DateOfBirth {
 const Birthday = () => {
   const userInfo = useSelector((state: any) => state.user);
 
-  console.log(userInfo, "userInfo?????");
-
   /**
    * select 값 관련 state
    * @category 회원가입
@@ -28,7 +23,6 @@ const Birthday = () => {
    * 최종 생년월일
    * @category 회원가입
    */
-  // eslint-disable-next-line no-useless-concat
   const birthDate = `${yearSelect}` + `${monthSelect}` + `${daySelect}`;
 
   /**

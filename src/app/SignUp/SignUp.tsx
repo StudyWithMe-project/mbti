@@ -1,10 +1,12 @@
+"use client"; // This is a client component 👈🏽
+
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { joinAction } from "../../store/actions/join";
 
 const SignUp = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   /**
    * Email input 관련 state
@@ -171,14 +173,14 @@ const SignUp = () => {
   const Submit = useCallback((e: any) => {
     e.preventDefault();
 
-    dispatch(
-      joinAction({
-        realName: nameValue,
-        password: pwValue,
-        loginId: idValue,
-        phoneNumber: emailValue,
-      })
-    );
+    // dispatch(
+    //   joinAction({
+    //     realName: nameValue,
+    //     password: pwValue,
+    //     loginId: idValue,
+    //     phoneNumber: emailValue,
+    //   })
+    // );
   }, []);
 
   return (
