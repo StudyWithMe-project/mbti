@@ -9,7 +9,7 @@ const CompoundMain = (props: MainProps) => {
   return (
     <div>
       <SelectGroup>
-        <SelectGroup.OptionItem></SelectGroup.OptionItem>
+        <SelectGroup.OptionItem>TEST</SelectGroup.OptionItem>
       </SelectGroup>
     </div>
   );
